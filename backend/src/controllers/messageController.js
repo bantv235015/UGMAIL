@@ -11,9 +11,9 @@ const getMessageImageUrl = async (file) => {
   if (!file) {
     return null;
   }
-uploadImageFromBuffer
-  const uploaded = await (file.buffer, {
-    folder: "Ugmail_chat/messages",
+
+  const uploaded = await uploadImageFromBuffer(file.buffer, {
+    folder: "moji_chat/messages",
     transformation: [{ width: 1200, height: 1200, crop: "limit" }],
   });
 
